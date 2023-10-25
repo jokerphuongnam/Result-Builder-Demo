@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+            TextField(text: $username) {
+                Text("Username")
+                    .padding(16)
+                    .border(.black, width: 1)
+                    .cornerRadius(16)
+            }
+        }
+        .refreshable {
+            
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  Result_Builder_DemoApp.swift
+//  ResultBuilderDemoApp.swift
 //  Result Builder Demo
 //
 //  Created by pnam on 23/01/2023.
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct Result_Builder_DemoApp: App {
+struct ResultBuilderDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView(network: DataNetwork())
         }
     }
 }
